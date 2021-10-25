@@ -8,6 +8,12 @@ public class LargestOf3Num {
 		int n1 = scan.nextInt();
 		int n2 = scan.nextInt();
 		int n3 = scan.nextInt();
+		//----------------------------------
+		//using ternary operator
+		int largest = n1>n2 && n1>n3 ? n1 : n2>n3 ? n2 : n3;
+		
+		System.out.println("largest using T.O "+largest);
+		//---------------------------------
 		int temp;
 
 		if (n1 > n2) {
